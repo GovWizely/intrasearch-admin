@@ -1,0 +1,8 @@
+development:
+  host_url: 'http://localhost:9292'
+
+test:
+  host_url: 'http://test.host.org:9292'
+
+production:
+  host_url: 'http://localhost:8443'

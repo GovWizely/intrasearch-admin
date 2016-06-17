@@ -1,0 +1,11 @@
+language: ruby
+rvm:
+- 2.2.5
+bundler_args: "--without production"
+before_script:
+- cp config/intrasearch.yml.example config/intrasearch.yml
+- cp config/secrets.yml.example config/secrets.yml
+addons:
+  code_climate:
+    repo_token:
+      secure: BL4XjrJrj+2eeCH/EYgLbEjQSUNbVjs+OdM9OedU6RvdJq1380egf4p5azesRmEEzWpNsX2MlbHkvnA6l7f6Ta/6XouPYQZ7F3/CWPDCqhbaBgiXiuTYM90yyymC+TLgT7DGoS1vCOGdYdffVG/7tRRQUCTEB1bYmLOeoJt/wF+P8wtMlPIU1lRsurTFLDawKbMnRe2xY9iHMS1MlQATRPpdiIzl89jR32V5bzugTC682Srs11S3PfLlW4o1QwEV9fLpA2FALWutdprxbWYqEXBxb5TPyh+gAn413QYYsBMfUZ34xITbqz208+J1isA8iVVSQlIZ+iD8R0WFI4trAyyg1FI3snIlvg/H4KJQyKoAE3rIw1fpphV+XMgPPE2zpqEd4ugedaYder/0gKX095lnPu4MLSk6R7noGfsWX9RBC4PQOqHJG9FVtSTmLCocsES85xIFY2cwHMwT/1oTLImbIadnKbwKk/zAnMUi2e0MvGAXDr7D0NM7rwXRoeQ5vd4pnKT+EFv3ro/wTaWRK7hZltkCE+51yZURfJDufnTuAjJJBidNU/kmQTs5YELSoSy8UjUt/ZzwKSORUbmzS5MvXmPRcHOIpgxOwoCW0U+8sCqtjjPHhWjpgnwOHnA3UddzjqVhuJIbAoLoWSGDc3Z9aYgq7y3HqOLFVTYcDpc=

@@ -1,0 +1,16 @@
+= content_for :title, 'Trade Events'
+%h1 Trade Events
+
+%table
+  %thead
+    %tr
+      %th Name
+      %th Start date
+
+  %tbody
+    - @trade_events.each do |trade_event|
+      %tr
+        %td= link_to decode(trade_event.name), trade_event_path(trade_event)
+        %td= trade_event.start_date
+
+= will_paginate @trade_events
