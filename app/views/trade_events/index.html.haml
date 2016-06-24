@@ -1,16 +1,24 @@
 = content_for :title, 'Trade Events'
 %h1 Trade Events
 
+= render 'shared/flash'
+
 %table
   %thead
     %tr
       %th Name
       %th Start date
+      %th End date
+      %th MD present?
+      %th Actions
 
   %tbody
     - @trade_events.each do |trade_event|
       %tr
         %td= link_to decode(trade_event.name), trade_event_path(trade_event)
-        %td= trade_event.start_date
+        %td= render_date trade_event.start_date
+        %td= render_date trade_event.end_date
+        %td= trade_event.md_description.present?
+        %td= link_to 'Edit', edit_trade_event_path(trade_event)
 
 = will_paginate @trade_events

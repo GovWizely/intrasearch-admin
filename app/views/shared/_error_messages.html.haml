@@ -1,0 +1,6 @@
+- return if model.errors.empty?
+
+#error_explanation
+  %ul
+    - model.errors.full_messages.each do |message|
+      %li= message

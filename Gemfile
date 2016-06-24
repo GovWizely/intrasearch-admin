@@ -4,7 +4,10 @@ gem 'rails', '4.2.6'
 
 gem 'activeresource'
 gem 'coffee-rails', '~> 4.1.0'
+gem 'devise'
+gem 'github-markdown'
 gem 'haml-rails'
+gem 'html-pipeline'
 gem 'htmlentities'
 gem 'jquery-rails'
 gem 'rake'
@@ -26,6 +29,7 @@ end
 
 group :test do
   gem 'codeclimate-test-reporter'
+  gem 'launchy'
 end
 
 group :production do

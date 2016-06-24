@@ -1,8 +1,22 @@
 = content_for :title, "Trade event: #{decode @trade_event.name}"
 
-- %w(name id source url event_url start_date end_date registration_title registration_url description).each do |attribute|
-  %dl
-    %dt= attribute.titleize
-    %dd= decode @trade_event.attributes[attribute]
+= render 'shared/flash'
 
-= link_to 'Back', trade_events_path
+%dl
+  - %w(name id source url event_url start_date end_date registration_title registration_url description).each do |attribute|
+    %dt= attribute.titleize
+    %dd= render_attribute @trade_event, attribute
+
+  %dt Markdown description
+  %dd
+    %pre= @trade_event.md_description
+
+  %dt HTML description
+  %dd
+    %pre= @trade_event.html_description
+
+= link_to 'Edit', edit_trade_event_path(@trade_event)
+\|
+= link_to 'Back', :back
+\|
+= link_to 'Trade events', trade_events_path

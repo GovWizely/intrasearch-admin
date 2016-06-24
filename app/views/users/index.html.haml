@@ -1,0 +1,18 @@
+= content_for :title, 'Users'
+%h1 Users
+
+= render 'shared/flash'
+
+%table
+  %thead
+    %tr
+      %th email
+
+  %tbody
+    - @users.each do |user|
+      %tr
+        %td= user.email
+
+= link_to 'Home', root_path
+\|
+= link_to 'Add user', new_user_path

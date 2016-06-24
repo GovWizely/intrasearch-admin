@@ -5,6 +5,7 @@ require 'simplecov'
 SimpleCov.minimum_coverage 100
 SimpleCov.start 'rails' do
   add_filter '.bundle'
+  add_filter 'lib/devise/orm/active_resource.rb'
 end
 
 require 'codeclimate-test-reporter'

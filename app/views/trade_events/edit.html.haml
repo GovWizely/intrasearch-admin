@@ -1,0 +1,7 @@
+= content_for :title, "Trade event: #{decode @trade_event.name}"
+
+= render 'form'
+
+= link_to 'Back', :back
+\|
+= link_to 'Trade events', trade_events_path

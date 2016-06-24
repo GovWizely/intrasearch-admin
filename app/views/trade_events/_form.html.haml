@@ -1,0 +1,15 @@
+= form_for @trade_event do |f|
+  %dl
+    - %w(name id source url event_url start_date end_date registration_title registration_url).each do |attribute|
+      %dt= attribute.titleize
+      %dd= render_attribute @trade_event, attribute
+  .field
+    = f.label :description
+    %br
+    = f.text_area :description, readonly: true, size: '60x20'
+  .field
+    = f.label :md_description
+    %br
+    = f.text_area :md_description, size: '60x20'
+  .actions
+    = f.submit 'Save'

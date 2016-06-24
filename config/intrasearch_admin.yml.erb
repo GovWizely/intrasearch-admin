@@ -1,0 +1,9 @@
+<%= @environment %>:
+  action_mailer:
+    default_url_options:
+      :host: '<%= @host %>'
+      :protocol: https
+    smtp_settings:
+      :address: '<%= @address %>'
+      :user_name: '<%= @user_name %>'
+      :password: '<%= @password %>'

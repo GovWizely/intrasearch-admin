@@ -3,7 +3,9 @@ rvm:
 - 2.2.5
 bundler_args: "--without production"
 before_script:
+- cp config/devise.yml.example config/devise.yml
 - cp config/intrasearch.yml.example config/intrasearch.yml
+- cp config/intrasearch_admin.yml.example config/intrasearch_admin.yml
 - cp config/secrets.yml.example config/secrets.yml
 addons:
   code_climate:

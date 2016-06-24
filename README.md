@@ -15,7 +15,9 @@ Provides admin interface for intrasearch.
 ## Setup
 
 - Start [intrasearch](https://github.com/GovWizely/intrasearch)
+- Copy `config/devise.yml.example` to `config/devise.yml`
 - Copy `config/intrasearch.yml.example` to `config/intrasearch.yml`
+- Copy `config/intrasearch_admin.yml.example` to `config/intrasearch_admin.yml`
 - Copy `config/secrets.yml.example` to `config/secrets.yml`
 - Run `bundle`
 - Start the app: `bundle exec rails s`

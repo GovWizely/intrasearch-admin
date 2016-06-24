@@ -1,0 +1,18 @@
+{
+  "created_at": "2016-06-22T18:43:32.033+00:00",
+  "updated_at": "2016-06-22T19:40:33.731Z",
+  "email": "admin@example.org",
+  "encrypted_password": "$2a$11$57HGWUpXnk7Aue9yyGaaTuX5UtM5nzejhP83.hyRqNAOneb9D8ICm",
+  "reset_password_token": "cqjzUAm52bpcBKCJrEei",
+  "reset_password_sent_at": "2016-06-23T17:44:20.081+00:00",
+  "remember_created_at": null,
+  "sign_in_count": 2,
+  "current_sign_in_at": "2016-06-23T17:44:37.685+00:00",
+  "last_sign_in_at": "2016-06-23T17:40:58.225+00:00",
+  "current_sign_in_ip": "::1",
+  "last_sign_in_ip": "::1",
+  "failed_attempts": 0,
+  "unlock_token": null,
+  "locked_at": null,
+  "id": "AVV5bKhGLZFSYhIe3289"
+}

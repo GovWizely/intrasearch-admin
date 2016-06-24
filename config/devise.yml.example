@@ -1,0 +1,5 @@
+development:
+  mailer_sender: noreply@example.org
+
+test:
+  mailer_sender: noreply@test.host.org
