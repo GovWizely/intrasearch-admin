@@ -40,7 +40,7 @@ RSpec.describe 'trade events', type: :feature do
       end
 
       it 'renders successful message' do
-        expect(page).to have_content 'You have successfully save the trade event'
+        expect(page).to have_content 'You have successfully save this trade event'
       end
     end
 

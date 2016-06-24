@@ -15,7 +15,7 @@ class TradeEventsController < ApplicationController
 
   def update
     if @trade_event.update_attributes update_params
-      redirect_to trade_event_path(@trade_event), notice: 'You have successfully save the trade event'
+      redirect_to trade_event_path(@trade_event), notice: 'You have successfully save this trade event'
     else
       render :edit
     end
