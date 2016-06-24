@@ -1,8 +1,9 @@
-= form_for @user do |f|
-  = render partial: 'shared/error_messages', locals: { model: @user }
+.form
+  = form_for @user, html: { class: 'pure-form pure-form-stacked' } do |f|
+    = render partial: 'shared/error_messages', locals: { model: @user }
 
-  .field
-    = f.label :email
-    = f.email_field :email
-  .actions
+    %fieldset
+      = f.label :email
+      = f.email_field :email, autofocus: true
+
     = f.submit 'Add'

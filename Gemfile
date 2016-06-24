@@ -10,6 +10,7 @@ gem 'haml-rails'
 gem 'html-pipeline'
 gem 'htmlentities'
 gem 'jquery-rails'
+gem 'pure-css-rails'
 gem 'rake'
 gem 'sass-rails', '~> 5.0'
 gem 'therubyracer', platforms: :ruby

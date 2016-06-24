@@ -1,15 +1,17 @@
-= form_for @trade_event do |f|
+.form
   %dl
     - %w(name id source url event_url start_date end_date registration_title registration_url).each do |attribute|
       %dt= attribute.titleize
       %dd= render_attribute @trade_event, attribute
-  .field
-    = f.label :description
-    %br
-    = f.text_area :description, readonly: true, rows: '20'
-  .field
-    = f.label :md_description
-    %br
-    = f.text_area :md_description, rows: '20'
-  .actions
+
+  = form_for @trade_event, html: { class: 'pure-form pure-form-stacked' } do |f|
+
+    %fieldset
+      = f.label :description
+      = f.text_area :description, readonly: true, rows: '15'
+
+    %fieldset
+      = f.label :md_description, 'Markdown description'
+      = f.text_area :md_description, rows: '15'
+
     = f.submit 'Save'

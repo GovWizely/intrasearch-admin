@@ -123,6 +123,7 @@ GEM
       slop (~> 3.4)
     pry-rails (0.3.4)
       pry (>= 0.9.10)
+    pure-css-rails (0.6.0)
     rack (1.6.4)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -234,6 +235,7 @@ DEPENDENCIES
   jquery-rails
   launchy
   pry-rails
+  pure-css-rails
   rails (= 4.2.6)
   rake
   rspec-rails

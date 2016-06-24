@@ -1,0 +1,53 @@
+body {
+  font-family: 'Open Sans', verdana, arial, helvetica, sans-serif;
+  font-size: 14px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.form {
+  margin: 10px 0;
+
+  label {
+    font-weight: bold;
+  }
+}
+
+dt {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+dd {
+  margin: 0 0 1em 0;
+  padding: 0;
+}
+
+textarea {
+  font-size: 1em;
+  width: 95%;
+}
+
+pre {
+  background-color: #eee;
+  margin: 0;
+  padding: 0.5em;
+}
+
+.links {
+  margin: 1em 0;
+
+  a, em, span {
+    margin: 0 .5em 0 0;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    display: inline;
+  }
+}

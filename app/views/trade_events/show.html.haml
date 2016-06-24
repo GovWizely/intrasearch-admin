@@ -1,5 +1,7 @@
 = content_for :title, "Trade event: #{decode @trade_event.name}"
 
+%h1 Trade Event
+
 = render 'shared/flash'
 
 %dl
@@ -15,8 +17,8 @@
   %dd
     %pre= @trade_event.html_description
 
-= link_to 'Edit', edit_trade_event_path(@trade_event)
-\|
-= link_to 'Back', :back
-\|
-= link_to 'Trade events', trade_events_path
+.links
+  %ul
+    %li= link_to 'Edit', edit_trade_event_path(@trade_event)
+    %li= link_to 'Back', :back
+    %li= link_to 'Trade events', trade_events_path

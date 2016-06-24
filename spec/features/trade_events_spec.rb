@@ -35,7 +35,7 @@ RSpec.describe 'trade events', type: :feature do
       before do
         visit '/trade_events'
         first('a', text: 'Edit').click
-        fill_in 'Md description', with: '# my trade event description'
+        fill_in 'Markdown description', with: '# my trade event description'
         click_button 'Save'
       end
 

@@ -3,7 +3,7 @@
 
 = render 'shared/flash'
 
-%table
+%table.pure-table.pure-table-striped
   %thead
     %tr
       %th email
@@ -13,6 +13,7 @@
       %tr
         %td= user.email
 
-= link_to 'Home', root_path
-\|
-= link_to 'Add user', new_user_path
+.links
+  %ul
+    %li= link_to 'Home', root_path
+    %li= link_to 'Add user', new_user_path
