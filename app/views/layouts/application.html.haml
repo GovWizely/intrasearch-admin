@@ -8,4 +8,14 @@
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   %body
+    = render 'shared/flash'
+    - if user_signed_in?
+      .nav-wrapper
+        .nav
+          %ul.header
+            %li
+              %span#current_user= current_user.email
+            %li= link_to 'Home', root_path
+            %li= link_to 'Log out', destroy_user_session_path, method: :delete
+
     = yield

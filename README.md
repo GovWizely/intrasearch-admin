@@ -20,6 +20,11 @@ Provides admin interface for intrasearch.
 - Copy `config/intrasearch_admin.yml.example` to `config/intrasearch_admin.yml`
 - Copy `config/secrets.yml.example` to `config/secrets.yml`
 - Run `bundle`
+- Add user from the console `bundle exec rails c`
+  ```
+    u = User.create email: 'foo@example.com'
+    u.reset_password 'changemE', 'changemE'
+  ```
 - Start the app: `bundle exec rails s`
 - Open [localhost:3000/trade_events](http://localhost:3000/trade_events)
 

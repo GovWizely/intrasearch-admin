@@ -1,0 +1,39 @@
+{
+  "id": "ustda",
+  "contacts": [
+    {
+      "email": "john.doe@example.org",
+      "first_name": "John",
+      "last_name": "Doe",
+      "person_title": "$person_title",
+      "phone": "111-222-3333",
+      "post": "$post"
+    }
+  ],
+  "cost": 25.0,
+  "cost_currency": "USD",
+  "end_date": "2016-05-24",
+  "end_time": "14:46",
+  "hosted_url": "https://example.org/trade_event?id=ustda",
+  "html_description": null,
+  "industries": [
+    "eCommerce Industry"
+  ],
+  "md_description": null,
+  "name": "USTDA Trade Event Summit f0e259",
+  "original_description": "USTDA Trade Event f0e259 description.",
+  "registration_title": "USTDA Awesome Trade Event Summit",
+  "registration_url": "http://ustda.trade.events.example.org/registration/f0e259",
+  "source": "USTDA",
+  "start_date": "2016-05-17",
+  "start_time": "15:46",
+  "url": "http://ustda.trade.events.example.org/event/f0e259",
+  "venues": [
+    {
+      "city": "Washington",
+      "country": "United States",
+      "name": "Washington, D.C.",
+      "state": "D.C."
+    }
+  ]
+}

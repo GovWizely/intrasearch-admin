@@ -1,0 +1,9 @@
+%dl
+  %dt Name
+  %dd
+    = contact.attributes['first_name']
+    = contact.attributes['last_name']
+
+  - %w(person_title post email phone).each do |key|
+    - next if contact.attributes[key].blank?
+    = render_attribute contact, key

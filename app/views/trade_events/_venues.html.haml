@@ -1,0 +1,6 @@
+- return unless venues
+%dt Venues
+%dd
+  %ul
+    - venues.each do |venue|
+      %li= render 'venue', contact: venue

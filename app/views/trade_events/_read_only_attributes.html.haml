@@ -1,0 +1,6 @@
+%dl
+  - ApplicationHelper::TRADE_EVENT_DISPLAY_ATTRIBUTES.each do |attribute|
+    = render_attribute @trade_event, attribute
+
+  = render 'venues', venues: @trade_event.attributes[:venues]
+  = render 'contacts', contacts: @trade_event.attributes[:contacts]

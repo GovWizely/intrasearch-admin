@@ -1,0 +1,6 @@
+- return unless contacts
+%dt Contacts
+%dd
+  %ul
+    - contacts.each do |contact|
+      %li= render 'contact', contact: contact

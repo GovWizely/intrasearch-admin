@@ -1,3 +1,5 @@
+@import 'utilities';
+
 body {
   font-family: 'Open Sans', verdana, arial, helvetica, sans-serif;
   font-size: 14px;
@@ -22,6 +24,15 @@ dt {
 dd {
   margin: 0 0 1em 0;
   padding: 0;
+
+  ul {
+    padding-left: 20px;
+
+    li dl dd {
+      padding-bottom: 0.3em;
+      margin-bottom: 0;
+    }
+  }
 }
 
 textarea {
@@ -42,12 +53,14 @@ pre {
     margin: 0 .5em 0 0;
   }
 
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  li {
-    display: inline;
-  }
+  @include inline-list();
+}
+
+.nav-wrapper {
+  @include clearfix;
+}
+
+.nav {
+  float: right;
+  @include inline-list();
 }

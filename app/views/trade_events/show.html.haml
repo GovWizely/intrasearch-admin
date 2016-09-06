@@ -2,12 +2,10 @@
 
 %h1 Trade Event
 
-= render 'shared/flash'
+= render 'read_only_attributes'
 
 %dl
-  - %w(name id source url event_url start_date end_date registration_title registration_url description).each do |attribute|
-    %dt= attribute.titleize
-    %dd= render_attribute @trade_event, attribute
+  = render_attribute @trade_event, 'original_description'
 
   %dt Markdown description
   %dd

@@ -1,12 +1,11 @@
 = content_for :title, 'Trade Events'
 %h1 Trade Events
 
-= render 'shared/flash'
-
 %table.pure-table.pure-table-striped
   %thead
     %tr
       %th Name
+      %th Source
       %th Start date
       %th End date
       %th MD present?
@@ -16,8 +15,9 @@
     - @trade_events.each do |trade_event|
       %tr
         %td= link_to decode(trade_event.name), trade_event_path(trade_event)
-        %td= render_date trade_event.start_date
-        %td= render_date trade_event.end_date
+        %td= trade_event.attributes[:source]
+        %td= render_date trade_event.attributes[:start_date]
+        %td= render_date trade_event.attributes[:end_date]
         %td= trade_event.md_description.present?
         %td= link_to 'Edit', edit_trade_event_path(trade_event)
 

@@ -9,25 +9,50 @@ RSpec.describe 'trade events', type: :feature do
         trade_events_response_body = Rails.root.join('spec/fixtures/json/trade_events_limit_30_offset_0.json').read
         mock.get '/admin/trade_events.json?limit=30&offset=0', {}, trade_events_response_body
 
-        trade_event_show_response_body = Rails.root.join('spec/fixtures/json/trade_event_36282.json').read
-        mock.get '/admin/trade_events/36282.json', {}, trade_event_show_response_body
+        %w(ita sba ustda).each do |id|
+          trade_event_show_response_body = Rails.root.join("spec/fixtures/json/trade_event_#{id}.json").read
+          mock.get "/admin/trade_events/#{id}.json", {}, trade_event_show_response_body
+        end
 
-        mock.patch '/admin/trade_events/36282.json', {}, '{}'
+        mock.patch '/admin/trade_events/ita.json', {}, '{}'
 
-        mock.get '/admin/trade_events/94c68284a1b7698becdcdaa69dda29bb2d76051c.json', {}, nil, 404
+        mock.get '/admin/trade_events/dl.json', {}, nil, 404
       end
     end
 
-    context 'when visiting Trade Events page' do
+    context 'when visiting ITA Trade Event page' do
       before do
         visit '/'
         click_link 'Trade Events'
       end
 
       it 'lists trade events' do
-        expect(page).to have_content('Trade Event 36282')
         click_link 'Trade Event 36282'
-        expect(page).to have_selector('a', text: 'example.org/trade_event?id=36282')
+        expect(page).to have_link('a', href: 'https://example.org/trade_event?id=ita')
+      end
+    end
+
+    context 'when visiting SBA Trade Event page' do
+      before do
+        visit '/'
+        click_link 'Trade Events'
+      end
+
+      it 'lists trade events' do
+        click_link 'SBA Trade Event 73022'
+        expect(page).to have_link('a', href: 'https://example.org/trade_event?id=sba')
+      end
+    end
+
+    context 'when visiting USTDA Trade Event page' do
+      before do
+        visit '/'
+        click_link 'Trade Events'
+      end
+
+      it 'lists trade events' do
+        click_link 'USTDA Trade Event Summit f0e259'
+        expect(page).to have_link('a', href: 'https://example.org/trade_event?id=ustda')
       end
     end
 

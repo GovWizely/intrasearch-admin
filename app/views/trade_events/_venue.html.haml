@@ -1,0 +1,4 @@
+%dl
+  - %w(name address city state country).each do |key|
+    - next if contact.attributes[key].blank?
+    = render_attribute contact, key
