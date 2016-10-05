@@ -1,0 +1,5 @@
+%dl
+  - ApplicationHelper::TRADE_LEAD_DISPLAY_ATTRIBUTES['common_attributes'].each do |attribute|
+    = render_attribute @trade_lead, attribute
+  - ApplicationHelper::TRADE_LEAD_DISPLAY_ATTRIBUTES[@trade_lead.source].each do |attribute|
+    = render_attribute @trade_lead, attribute

@@ -1,0 +1,27 @@
+{
+  "original_description": "See RFP.",
+  "title": "Education Activity Lead",
+  "hosted_url": "https:\/\/example.org\/trade_lead?id=995a1c55b26d11fe162f3f61b594be8c403c60f0",
+  "source": "FBO",
+  "published_at": "2014-03-03T00:00:00+00:00",
+  "end_at": "2017-04-17T00:00:00+00:00",
+  "classification_code": "U",
+  "click_url": "https:\/\/goo.gl\/fbo1",
+  "competitive_procurement_strategy": "$competitive_procurement_strategy",
+  "contact": "Jane Doe",
+  "contract_number": "sol-674-14-000014",
+  "industries": [
+    "Scientific and Technical Services"
+  ],
+  "notice_type": "COMBINE",
+  "procurement_office": "Overseas Missions",
+  "procurement_office_address": "Dept of State Washington DC 20521-6120",
+  "procurement_organization": "Agency for International Development",
+  "procurement_organization_address": "South Africa USAID-Pretoria",
+  "specific_address": "Regional Acquisition and Assistance Office",
+  "url": "https:\/\/www.fbo.org\/url%20with%20spaces.html",
+  "id": "id_fbo",
+  "country": "South Africa",
+  "html_description": "<h3>See RFP.<\/h3>",
+  "md_description": "### See RFP."
+}

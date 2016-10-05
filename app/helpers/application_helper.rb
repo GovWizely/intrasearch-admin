@@ -17,6 +17,8 @@ module ApplicationHelper
     registration_url
   ).freeze
 
+  TRADE_LEAD_DISPLAY_ATTRIBUTES = YAML.load(Rails.root.join('config/trade_lead_attributes.yml').read)
+
   @@coder = HTMLEntities.new
 
   def render_attribute(model, attribute_name)
@@ -27,10 +29,12 @@ module ApplicationHelper
     rendered_value = case attribute_name
                      when /url\Z/
                        render_url value
-                     when /date\Z/
+                     when /urls\Z/
+                       render_urls value
+                     when /date|\_at\Z/
                        render_date value
                      when 'industries'
-                       render_array_value value
+                       render_array_value value.map { |v| decode(v) }
                      else
                        decode value
                      end
@@ -41,8 +45,13 @@ module ApplicationHelper
     content_tag :dt, attribute_name.titleize
   end
 
-  def render_url(str)
-    link_to str.sub(%r{\Ahttps?://}i, ''), str
+  def render_urls(urls)
+    links = urls.map { |url| render_url url }
+    render_array_value links
+  end
+
+  def render_url(url)
+    link_to url.sub(%r{\Ahttps?://}i, ''), url
   end
 
   def render_array_value(array)

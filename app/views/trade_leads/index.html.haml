@@ -1,0 +1,23 @@
+= content_for :title, 'Trade Leads'
+%h1 Trade Leads
+
+%table.pure-table.pure-table-striped
+  %thead
+    %tr
+      %th Title
+      %th Source
+      %th Published date
+      %th MD present?
+      %th Actions
+
+  %tbody
+    - @trade_leads.each do |trade_lead|
+      %tr
+        %td= link_to decode(trade_lead.title), trade_lead_path(trade_lead)
+        %td= trade_lead.attributes[:source]
+        %td= render_date trade_lead.attributes[:published_at]
+        %td= trade_lead.md_description.present?
+        %td= link_to 'Edit', edit_trade_lead_path(trade_lead)
+
+.links
+  = will_paginate @trade_leads

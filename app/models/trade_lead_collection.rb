@@ -1,4 +1,4 @@
-class TradeEventCollection < ActiveResource::Collection
+class TradeLeadCollection < ActiveResource::Collection
   extend IntrasearchResourceCollection
   # attr_reader :current_page,
   #             :offset,
@@ -10,7 +10,7 @@ class TradeEventCollection < ActiveResource::Collection
   #   @elements = parsed['results']
   #   metadata = parsed['metadata']
   #   @offset = metadata['offset']
-  #   @per_page = TradeEvent.per_page
+  #   @per_page = TradeLead.per_page
   #   @current_page = (@offset / @per_page) + 1
   #   @total_entries = metadata['total']
   #   @total_pages = @total_entries.zero? ? 1 : (@total_entries / @per_page.to_f).ceil

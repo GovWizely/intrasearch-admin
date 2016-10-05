@@ -26,6 +26,6 @@ Provides admin interface for intrasearch.
     u.reset_password 'changemE', 'changemE'
   ```
 - Start the app: `bundle exec rails s`
-- Open [localhost:3000/trade_events](http://localhost:3000/trade_events)
+- Open [localhost:3000](http://localhost:3000)
 
 Cheers!

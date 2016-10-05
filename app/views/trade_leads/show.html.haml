@@ -1,0 +1,22 @@
+= content_for :title, "Trade lead: #{decode @trade_lead.title}"
+
+%h1 Trade Lead
+
+= render 'read_only_attributes'
+
+%dl
+  = render_attribute @trade_lead, 'original_description'
+
+  %dt Markdown description
+  %dd
+    %pre= @trade_lead.md_description
+
+  %dt HTML description
+  %dd
+    %pre= @trade_lead.html_description
+
+.links
+  %ul
+    %li= link_to 'Edit', edit_trade_lead_path(@trade_lead)
+    %li= link_to 'Back', :back
+    %li= link_to 'Trade leads', trade_leads_path

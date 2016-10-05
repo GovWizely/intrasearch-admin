@@ -1,0 +1,37 @@
+{
+  "original_description": "Awesome description.",
+  "title": "Awesome Lead",
+  "hosted_url": "https:\/\/example.org\/trade_lead?id=539d317fe76effc1e7631ce1a7d2e6b814434f51",
+  "source": "CANADA",
+  "published_at": "2016-08-10T00:00:00+00:00",
+  "amended_at": "2016-08-11T00:00:00+00:00",
+  "end_at": "2016-09-20T00:00:00+00:00",
+  "amendment_number": "000",
+  "bid_type": "All interested suppliers may submit a bid",
+  "click_urls": [
+    "https:\/\/goo.gl\/canada1",
+    "https:\/\/goo.gl\/canada2"
+  ],
+  "competitive_procurement_strategy": "N\/A",
+  "contact": "Jane Doe",
+  "contract_number": "47419-188062\/B",
+  "implementing_entity": "Canada Border Services Agency",
+  "industries": [
+    "Franchising",
+    "eCommerce Industry"
+  ],
+  "notice_type": "APM-NPP",
+  "procurement_organization": "Public Works and Government Services Canada",
+  "publishing_status": "Active",
+  "reference_number": "PW-$$BK-379-25940",
+  "specific_location": "Alberta",
+  "trade_agreement": "World Trade Organization-Agreement",
+  "urls": [
+    "https:\/\/tradelead.example.org\/canada\/1%20with%20spaces.pdf",
+    "https:\/\/tradelead.example.org\/canada\/2.pdf"
+  ],
+  "id": "id_canada",
+  "country": "Canada",
+  "html_description": "<h2>Awesome description.<\/h2>",
+  "md_description": "## Awesome description."
+}

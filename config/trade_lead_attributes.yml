@@ -1,0 +1,103 @@
+common_attributes:
+  - title
+  - id
+  - source
+  - country
+  - hosted_url
+  - published_at
+
+AUSTRALIA:
+  - url
+  - agency
+  - app_reference
+  - atm_id
+  - atm_type
+  - conditions_for_participation
+  - contact_officer
+  - delivery_timeframe
+  - email
+  - industries
+  - location
+  - lodgement_address
+  - multi_agency_access
+  - other_instructions
+  - panel_arrangement
+  - phone
+
+CANADA:
+  - urls
+  - amended_at
+  - end_at
+  - amendment_number
+  - bid_type
+  - competitive_procurement_strategy
+  - contact
+  - contract_number
+  - countries
+  - implementing_entity
+  - industries
+  - notice_type
+  - procurement_organization
+  - publishing_status
+  - reference_number
+  - specific_location
+  - trade_agreement
+
+FBO:
+  - url
+  - end_at
+  - classification_code
+  - competitive_procurement_strategy
+  - contact
+  - contract_number
+  - industries
+  - notice_type
+  - procurement_office
+  - procurement_office_address
+  - procurement_organization
+  - procurement_organization_address
+  - specific_address
+
+MCA:
+  - url
+  - categories
+  - funding_source
+
+STATE:
+  - url
+  - end_at
+  - borrowing_entity
+  - comments
+  - contact
+  - funding_source
+  - industries
+  - lead_source
+  - procurement_organization
+  - project_number
+  - project_size
+  - record_id
+  - specific_location
+  - status
+  - submitting_officer
+  - submitting_officer_contact
+  - tags
+
+UK:
+  - url
+  - contract_end_at
+  - contract_start_at
+  - deadline_at
+  - contact
+  - industries
+  - notice_type
+  - procurement_organization
+  - record_id
+  - reference_number
+  - specific_location
+  - status
+  - min_contract_value
+  - max_contract_value
+
+USTDA:
+  - url
+  - end_at

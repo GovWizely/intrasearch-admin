@@ -1,0 +1,10 @@
+= content_for :title, "Trade lead: #{decode @trade_lead.title}"
+
+%h1 Edit Trade Lead
+
+= render 'form'
+
+.links
+  %ul
+    %li= link_to 'Back', :back
+    %li= link_to 'Trade leads', trade_leads_path

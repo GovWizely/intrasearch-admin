@@ -1,0 +1,14 @@
+.form
+  = render partial: 'shared/error_messages', locals: { model: @trade_lead }
+  = render 'read_only_attributes'
+  = form_for @trade_lead, html: { class: 'pure-form pure-form-stacked' } do |f|
+
+    %fieldset
+      = f.label :original_description
+      = f.text_area :original_description, readonly: true, rows: '15'
+
+    %fieldset
+      = f.label :md_description, 'Markdown description'
+      = f.text_area :md_description, rows: '15'
+
+    = f.submit 'Save'
