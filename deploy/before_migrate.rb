@@ -14,10 +14,11 @@ template_config = {
   },
   'intrasearch_admin.yml' => {
     environment: env_vars['RAILS_ENV'],
-    host: node['intrasearch_admin']['action_mailer_url_host'],
-    address: env_vars['smtp_address'],
-    user_name: env_vars['smtp_user_name'],
-    password: env_vars['smtp_password'],
+    action_mailer_url_host: node['intrasearch_admin']['action_mailer_url_host'],
+    action_mailer_url_port: node['intrasearch_admin']['action_mailer_url_port'],
+    smtp_address: env_vars['smtp_address'],
+    smtp_user_name: env_vars['smtp_user_name'],
+    smtp_password: env_vars['smtp_password']
   }
 }
 
