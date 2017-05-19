@@ -17,5 +17,6 @@
 /config/intrasearch.yml
 /config/intrasearch_admin.yml
 /config/secrets.yml
+/config/skylight.yml
 /coverage/
 /spec/examples.txt

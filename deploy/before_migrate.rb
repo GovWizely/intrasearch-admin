@@ -19,6 +19,9 @@ template_config = {
     smtp_address: env_vars['smtp_address'],
     smtp_user_name: env_vars['smtp_user_name'],
     smtp_password: env_vars['smtp_password']
+  },
+  'skylight.yml' => {
+    skylight_authentication_token: env_vars['skylight_authentication_token']
   }
 }
 

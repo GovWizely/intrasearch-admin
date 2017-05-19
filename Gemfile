@@ -13,6 +13,7 @@ gem 'jquery-rails'
 gem 'pure-css-rails'
 gem 'rake'
 gem 'sass-rails', '~> 5.0'
+gem 'skylight'
 gem 'therubyracer', platforms: :ruby
 gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
